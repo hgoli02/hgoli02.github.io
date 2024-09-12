@@ -1,4 +1,9 @@
 /* Timeline custom component */
+
+html, body, .container {
+  overflow: visible !important;
+}
+
 .timeline-card {
   position: relative;
   margin-left: 16px; }
@@ -38,7 +43,9 @@ html, body {
   overflow-x: hidden; }
 
 .container {
-  max-width: 1140px; }
+  max-width: 1140px;
+  overflow: visible !important; /* Ensure no hidden or scrolling overflow is applied */
+}
 
 .site-title {
   font-size: 1.25rem;
@@ -51,9 +58,18 @@ html, body {
   color: inherit;
   opacity: 0.8; }
 
-.header-social .nav-link {
-  font-size: 1.25rem; }
+  .header-social .nav-link {
+    font-size: 2rem; /* Increase icon size */
+    color: #ffffff;  /* Set icon color to white for better contrast */
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    border-radius: 50%; /* Make the icon background circular */
+    margin-right: 15px; /* Add space between icons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
 
+  
 .nav-link:hover,
 .nav-link:focus {
   color: inherit;
@@ -243,13 +259,12 @@ footer a:not(.nav-link) {
 
 /* Sticky header */
 header#main-header {
-  background-color: #fff;
-  position: -webkit-sticky; /* For Safari */
-  position: sticky; /* For other browsers */
+  position: sticky;
   top: 0;
-  width: 100%; /* Ensure it spans the entire width */
-  z-index: 1000; /* Ensures it stays above other content */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  z-index: 9999; /* Ensure it stays on top of other elements */
+  background-color: #fff; /* Ensure the background color is consistent */
+  width: 100%; /* Full width of the viewport */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for aesthetic */
 }
 
 .site-title {
@@ -280,4 +295,8 @@ header#main-header {
 
 .nav-link:hover {
   color: #007bff; /* Bootstrap blue for hover */
+}
+
+.parent-class {
+  position: static !important; /* Ensure no parent has position: relative */
 }
