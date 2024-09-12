@@ -140,3 +140,144 @@ footer a:not(.nav-link) {
   .page-break {
     padding-top: 5rem;
     page-break-before: always; } }
+
+/* Ensure the images fit well in their columns */
+.img-fluid {
+  border-radius: 8px;
+}
+
+/* Style for project titles */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Styling for the button */
+.btn-primary {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-primary:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+/* Add some margin between rows */
+.row.mb-4 {
+  margin-bottom: 2rem;
+}
+
+#contact {
+  background-color: #f8f9fa; /* Light background for consistency */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#contact h2 {
+  font-weight: 300;
+  color: #343a40; /* Dark grey for titles */
+}
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact a {
+  color: #007bff; /* Bootstrap blue */
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#contact i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #6c757d; /* Light grey for icons */
+}
+
+#hobbies {
+  background-color: #f8f9fa; /* Same as contact section */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#hobbies h2 {
+  font-weight: 300;
+  color: #343a40; /* Same color scheme as the rest */
+}
+
+#hobbies p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+#hobbies ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#hobbies li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+#hobbies i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #6c757d; /* Light grey for icons */
+}
+
+/* Sticky header */
+header#main-header {
+  background-color: #fff;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* For other browsers */
+  top: 0;
+  width: 100%; /* Ensure it spans the entire width */
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.site-title {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #333; /* Main text color */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Bootstrap blue for hover */
+}
