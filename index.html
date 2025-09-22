@@ -196,60 +196,62 @@
 
   <!-- EXPERIENCE SECTION -->
 <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-  <h2 class="h2 fw-light mb-4">Experiences</h2>
-
   <!-- Research Experience -->
   <div class="my-5">
     <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Research Experience</h3>
 
-<!-- Research Project 1 -->
-<div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
-  <div class="col-md-4">
-    <img class="img-fluid" src="images/r1.png" alt="Certified Adversarial Robustness Thumbnail" loading="lazy" />
-  </div>
-  <div class="col-md-8">
-    <h5 class="fw-bold">Certified Adversarial Robustness via Partition-based Randomized Smoothing</h5>
-    <p>
-      In collaboration with <a href="https://www.cse.cuhk.edu.hk/~farnia/" target="_blank">Prof. Farzan Farnia</a>, 
-      We proposed a new method for the Certified Robustness Problem that leverages the spatial correlation of image pixels using SuperPixel Algorithms from Computer Vision literature, such as SLIC SuperPixels.
-      Our method greatly improves the visibility of the image and reduces the effective noise by a factor proportional to the square-root of the average super pixel size. 
-      The paper is currently available on arXiv and we plan to complete some of our proofs and submit it soon.
-    </p>
-    <a href="https://arxiv.org/abs/2409.13546" class="btn btn-primary">Read on arXiv</a>
-  </div>
-</div>
-
-    <!-- Research Project 2 -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
+    <!-- Research Project 1 (Moved Up & Updated): STITCH-OPE -->
+    <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
       <div class="col-md-4">
-        <img class="img-fluid" src="images/r2.png" alt="Research Project 2 Thumbnail" loading="lazy" />
+        <img class="img-fluid" src="images/r2.png" alt="STITCH-OPE Thumbnail" loading="lazy" />
       </div>
       <div class="col-md-8">
         <h5 class="fw-bold">STITCH-OPE: Trajectory Stitching with Guided Diffusion for Off-Policy Evaluation</h5>
         <p>
-          We developed STITCH-OPE, a model-based generative framework that leverages denoising diffusion for long-horizon OPE in high-dimensional state and action spaces using a combination of trajectory stitching and guided diffusion techniques.
-          This work was presented at the <i>Robotics: Science and Systems (RSS) 2025 conference - RoboEvaluation workshop </i>.
+          STITCH-OPE is a model-based generative framework that leverages denoising diffusion for long-horizon OPE in
+          high-dimensional state and action spaces via trajectory stitching and combination of positive and negative guided diffusion.
+          <strong>Selected as a Spotlight paper at NeurIPS 2025.</strong>
         </p>
-        <a href="https://openreview.net/forum?id=4zfM0gorfP" class="btn btn-primary">Read on OpenReview</a>
+        <a href="https://arxiv.org/abs/2505.20781v1" class="btn btn-primary">arXiv</a>
+        <a href="https://stitch-ope.github.io/" class="btn btn-secondary ms-2">Project Page</a>
+        <a href="https://github.com/STITCH-OPE/stitch-ope" class="btn btn-secondary ms-3">GitHub</a>
       </div>
     </div>
 
-        <!-- Research Project 3 -->
-        <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-md-4">
-            <img class="img-fluid" src="images/r3.png" alt="Research Project 2 Thumbnail" loading="lazy" />
-          </div>
-          <div class="col-md-8">
-            <h5 class="fw-bold"> Detecting Viral Social Events with Deep Survival Analysis in Complex Networks</h5>
-            <p>In this Project We Developed a framework for early detection of viral events in a complex network using statistical methods such as
-              survival analysis. To learn a good survival function we proposed using RNN's on the time series data. We evaluted our work on multiple datasets including Twitter, Weibo and Digg. 
-            </p>
-            <a href="https://arxiv.org/abs/2410.01320" class="btn btn-primary">Read on arXiv</a>
+    <!-- Research Project 2: Certified Adversarial Robustness -->
+    <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-4">
+        <img class="img-fluid" src="images/r1.png" alt="Certified Adversarial Robustness Thumbnail" loading="lazy" />
+      </div>
+      <div class="col-md-8">
+        <h5 class="fw-bold">Soft Super-Pixel Partitioning for Certified Adversarial Robustness</h5>
+        <p>
+          In collaboration with <a href="https://www.cse.cuhk.edu.hk/~farnia/" target="_blank">Prof. Farzan Farnia</a>, 
+          We proposed a new method for the Certified Robustness Problem that leverages the spatial correlation of image pixels using SuperPixel Algorithms from Computer Vision literature, such as SLIC SuperPixels.
+          Our method greatly improves the visibility of the image and reduces the effective noise by a factor proportional to the square-root of the average super pixel size. 
+          The paper is currently available on arXiv and we plan to complete some of our proofs and submit it soon.
+        </p>
+        <a href="https://arxiv.org/abs/2409.13546" class="btn btn-primary">arXiv</a> 
+        <a href="https://github.com/hgoli02/SoftSuperpixels" class="btn btn-secondary ms-3">GitHub</a>
+      </div>
+    </div>
 
-              <!-- This work is currently under review at IEEE Transactions on network science and engineering.</p> -->
-            <!-- <a href="https://github.com/link-to-project" class="btn btn-primary">View on GitHub</a> -->
-          </div>
-        </div>
+    <!-- Research Project 3: Detecting Viral Social Events -->
+    <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-md-4">
+        <img class="img-fluid" src="images/r3.png" alt="Detecting Viral Social Events Thumbnail" loading="lazy" />
+      </div>
+      <div class="col-md-8">
+        <h5 class="fw-bold">Detecting Viral Social Events with Deep Survival Analysis in Complex Networks</h5>
+        <p>
+          In this Project We Developed a framework for early detection of viral events in a complex network using statistical methods such as
+          survival analysis. To learn a good survival function we proposed using RNN's on the time series data. We evaluted our work on multiple datasets including Twitter, Weibo and Digg.
+        </p>
+        <a href="https://arxiv.org/abs/2410.01320" class="btn btn-primary">arXiv</a>
+        <a href="https://github.com/hgoli02/VEDSA" class="btn btn-secondary ms-3">GitHub</a>
+      </div>
+    </div>
+  </div>
 
     <!-- Add more research projects as needed -->
   </div>

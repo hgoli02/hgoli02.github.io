@@ -300,3 +300,42 @@ header#main-header {
 .parent-class {
   position: static !important; /* Ensure no parent has position: relative */
 }
+
+/* GitHub Button Styling */
+.btn-github {
+  background-color: #24292e;
+  border-color: #24292e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+  background-color: #1e2124;
+  border-color: #1e2124;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
+}
+
+.btn-github:focus,
+.btn-github:active {
+  background-color: #1e2124;
+  border-color: #1e2124;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(36, 41, 46, 0.25);
+}
+
+/* Alternative: Style existing secondary buttons when they're GitHub links */
+a[href*="github.com"].btn-secondary {
+  background-color: #24292e;
+  border-color: #24292e;
+  color: #fff;
+}
+
+a[href*="github.com"].btn-secondary:hover {
+  background-color: #1e2124;
+  border-color: #1e2124;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
+}
