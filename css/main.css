@@ -386,13 +386,13 @@ a[href*="github.com"].btn-secondary:hover {
 
 /* Secondary (soft, modern gray) — use this for arXiv / Project Page / etc. */
 .btn-secondary{
-  background: #f3f4f6;
+  background: #777b83;
   color: #111827;
-  border-color: #e5e7eb;
+  border-color: #575a61;
 }
 .btn-secondary:hover{
   background: #e7e9ee;
-  border-color: #d1d5db;
+  border-color: #575a61;
   color: #0f172a;
 }
 
@@ -400,7 +400,7 @@ a[href*="github.com"].btn-secondary:hover {
 .btn-outline{
   background: transparent;
   color: #111827;
-  border-color: #d1d5db;
+  border-color: #6b7077;
 }
 .btn-outline:hover{ background: #f3f4f6; }
 
@@ -426,7 +426,7 @@ a.btn.btn-secondary:link,
 a.btn.btn-secondary:visited{
   color:#111827;
   background:#f3f4f6;
-  border-color:#e5e7eb;
+  border-color:#808185;
 }
 
 /* If using the black GitHub style, keep it consistent too */
@@ -435,4 +435,70 @@ a.btn.btn-github:visited{
   color:#fff;
   background-color:#24292e;
   border-color:#24292e;
+}
+
+/* Project Page — gradient accent with subtle shine */
+.btn-project{
+  position: relative;
+  overflow: hidden;
+  color:#fff !important;
+  background: linear-gradient(135deg, #17a2b8, #7c3aed); /* teal → violet */
+  border: 0;
+  box-shadow:
+    0 8px 20px rgba(124,58,237,.25),
+    0 2px 6px rgba(23,162,184,.25);
+  transition:
+    transform .15s ease,
+    box-shadow .2s ease,
+    filter .2s ease,
+    background .2s ease;
+}
+
+.btn-project:hover{
+  transform: translateY(-1px);
+  filter: saturate(1.05);
+  background: linear-gradient(135deg, #1493a6, #6d28d9);
+  box-shadow:
+    0 10px 24px rgba(124,58,237,.28),
+    0 3px 8px rgba(23,162,184,.28);
+}
+
+.btn-project:active{
+  transform: translateY(0);
+}
+
+/* Focus ring */
+.btn-project:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(124,58,237,.25),
+    0 8px 20px rgba(0,0,0,.12);
+}
+
+/* Soft “shine” sweep on hover */
+.btn-project::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  transform: translateX(-100%);
+  transition: transform .45s ease;
+  pointer-events:none;
+}
+.btn-project:hover::after{ transform: translateX(100%); }
+
+/* Keep colors after click (visited) */
+a.btn.btn-project:link,
+a.btn.btn-project:visited{
+  color:#fff;
+  background: linear-gradient(135deg, #17a2b8, #7c3aed);
+  border:0;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .btn-project,
+  .btn-project::after{
+    transition: none;
+  }
 }
