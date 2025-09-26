@@ -339,3 +339,100 @@ a[href*="github.com"].btn-secondary:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(36, 41, 46, 0.3);
 }
+
+:root{
+  --btn-radius: 14px;
+  --btn-pad-y: .6rem;
+  --btn-pad-x: 1rem;
+  --btn-shadow: 0 4px 12px rgba(0,0,0,.08);
+  --btn-shadow-hover: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.btn{
+  border-radius: var(--btn-radius) !important;
+  padding: var(--btn-pad-y) var(--btn-pad-x) !important;
+  font-weight: 600;
+  letter-spacing: .2px;
+  border-width: 1px;
+  box-shadow: var(--btn-shadow);
+  transition:
+    transform .15s ease,
+    box-shadow .2s ease,
+    background-color .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+  will-change: transform;
+}
+
+.btn:hover{ transform: translateY(-1px); box-shadow: var(--btn-shadow-hover); }
+.btn:active{ transform: translateY(0); box-shadow: var(--btn-shadow); }
+
+.btn:focus-visible{
+  outline: none;
+  /* focus ring using your teal */
+  box-shadow: 0 0 0 4px rgba(23,162,184,.25), var(--btn-shadow-hover);
+}
+
+/* Primary (your teal, with a subtle gradient) */
+.btn-primary{
+  background: linear-gradient(180deg, #17a2b8, #1493a6);
+  border-color: #138496;
+  color: #fff;
+}
+.btn-primary:hover{
+  background: linear-gradient(180deg, #1493a6, #117f90);
+  border-color: #0f6f7e;
+}
+
+/* Secondary (soft, modern gray) — use this for arXiv / Project Page / etc. */
+.btn-secondary{
+  background: #f3f4f6;
+  color: #111827;
+  border-color: #e5e7eb;
+}
+.btn-secondary:hover{
+  background: #e7e9ee;
+  border-color: #d1d5db;
+  color: #0f172a;
+}
+
+/* Optional: outline/ghost style */
+.btn-outline{
+  background: transparent;
+  color: #111827;
+  border-color: #d1d5db;
+}
+.btn-outline:hover{ background: #f3f4f6; }
+
+/* Optional: pill shape */
+.btn-pill{ border-radius: 9999px !important; }
+
+/* Optional sizes */
+.btn-sm{ padding: .45rem .8rem !important; border-radius: 12px !important; }
+.btn-lg{ padding: .8rem 1.2rem !important; border-radius: 16px !important; }
+
+/* Nice spacing for icon-leading buttons */
+.btn > i:first-child{ margin-right: .4rem; }
+
+/* Keep button colors the same after click (visited) */
+a.btn.btn-primary:link,
+a.btn.btn-primary:visited{
+  color:#fff;
+  background: linear-gradient(180deg, #17a2b8, #1493a6);
+  border-color:#138496;
+}
+
+a.btn.btn-secondary:link,
+a.btn.btn-secondary:visited{
+  color:#111827;
+  background:#f3f4f6;
+  border-color:#e5e7eb;
+}
+
+/* If using the black GitHub style, keep it consistent too */
+a.btn.btn-github:link,
+a.btn.btn-github:visited{
+  color:#fff;
+  background-color:#24292e;
+  border-color:#24292e;
+}

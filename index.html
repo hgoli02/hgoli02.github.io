@@ -7,21 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hossein Goli's Personal Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'"/>
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap"/>
     </noscript>
     <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
     <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+
+    <!-- Layout tweaks -->
+    <style>
+      section.section { background: transparent; box-shadow: none !important; }
+      section.section .container-inner { padding: 3rem 0; border-radius: 0; background: transparent; }
+      .timeline-card { box-shadow: none !important; border: 0 !important; background: transparent !important; }
+      /* Move honors text slightly to the right so the dot/line never overlaps */
+      #honors .timeline-head, #honors .timeline-body { padding-left: 1.5rem !important; }
+      .divider { height: 1px; background: rgba(0,0,0,.08); margin: 2rem 0; }
+      header#main-header { background: #fff; border-bottom: 1px solid rgba(0,0,0,.06); }
+      .site-title { font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-weight: 600; }
+      .nav .nav-link { font-weight: 500; }
+      .cover .mask { background-color: rgba(0, 0, 0, 0.6) !important; }
+    </style>
+
     <noscript>
       <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
+        [data-aos] { opacity: 1 !important; transform: translate(0) scale(1) !important; }
       </style>
     </noscript>
   </head>
@@ -34,10 +46,11 @@
             <nav role="navigation">
               <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a></li>
+                <!-- Education removed from nav -->
                 <li class="nav-item"><a class="nav-link" href="#honors" title="Honors"><span class="menu-title">Honors</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Publications"><span class="menu-title">Publications</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications" title="Publications"><span class="menu-title">Publications</span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#hobbies" title="Hobbies"><span class="menu-title">Hobbies</span></a></li>
+                <!-- Add new sections here later if you name them -->
               </ul>
             </nav>
           </div>
@@ -45,361 +58,304 @@
       </div>
     </header>
 
-    <div class="page-content">
+    <main class="page-content">
       <div class="container">
-<div class="resume-container">
-  <div class="shadow-1-strong bg-white my-5" id="intro">
-    <div class="bg-info text-white"> 
-      
-      <div class="cover bg-image"><img src="images/back.jpg"/>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(1px);">
-          <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="200" height="200"/></div>
-            <div class="header-bio mt-3">
-              <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Hossein Goli</h2>
-                <p></p>
+
+        <!-- Intro / Hero -->
+        <section id="intro" class="section">
+          <div class="bg-info text-white"> 
+            <div class="cover bg-image"><img src="images/back.jpg" alt="cover"/>
+              <div class="mask" style="backdrop-filter: blur(1px);">
+                <div class="text-center p-5">
+                  <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="200" height="200" alt="avatar"/></div>
+                  <div class="header-bio mt-3">
+                    <div data-aos="zoom-in" data-aos-delay="0">
+                      <h2 class="h1">Hossein Goli</h2>
+                      <p></p>
+                    </div>
+                    <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
+                      <nav role="navigation">
+                        <ul class="nav justify-content-center">
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/hgoli02" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/hosseingoli/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://x.com/HogoGoli" title="Twitter/X" rel="me"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter/X</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="mailto:hosseingoli02@gmail.com" title="Email"><i class="fas fa-envelope"></i><span class="menu-title sr-only">Email</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://scholar.google.com/citations?user=M0LAA-oAAAAJ&hl=en" title="Google Scholar"><i class="fas fa-graduation-cap"></i><span class="menu-title sr-only">Google Scholar</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <!-- <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="CV.pdf" data-aos="fade-right" data-aos-delay="700">Download CV</a> -->
+                  </div>
+                </div>
               </div>
-              <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                <nav role="navigation">
-                  <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://github.com/hgoli02" title="Github">
-                        <i class="fab fa-github"></i><span class="menu-title sr-only">Github</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://www.linkedin.com/in/hosseingoli/" title="Linkedin">
-                        <i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span>
-                      </a>
-                    </li>
-                    <!-- ADDED: Twitter/X link -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://x.com/HogoGoli" title="Twitter/X" rel="me">
-                        <i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter/X</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="mailto:hosseingoli02@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i><span class="menu-title sr-only">Email</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="https://scholar.google.com/citations?user=M0LAA-oAAAAJ&hl=en" title="Google Scholar">
-                        <i class="fas fa-graduation-cap"></i><span class="menu-title sr-only">Google Scholar</span>
-                      </a>
-                    </li>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <div class="container-inner">
+            <h2 class="h2 fw-light mb-4">About Me</h2>  
+            <p>Hello! I’m Hossein Goli, a recent Graduate in Computer Engineering at Sharif University of Technology and an Incoming PhD student at the University of Toronto CS department.</p>
+            <p> I generally relish mathematically inspired fields. Because of my roots in Physics, One of the things i most enjoy is to combine beautiful mathematical concepts coming from physics and the perespectives of a physicist into Computer Science. I enjoy both the theoretical and practical side of Computer Science, as the enjoyment of seeing your algorithm work is like no other. </p>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Honors (unboxed, full text, aligned) -->
+        <section id="honors" class="section">
+          <div class="container-inner">
+            <h2 class="h2 fw-light mb-4">Honors and Awards</h2>
+            <div class="timeline">
+              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">Highest Honors<span class="text-muted h6"> B.Sc. Computer Engineering</span></div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">2020 - 2025</div>
+                  <div>
+                    Graduated <em>Summa Cum Laude</em> (with Highest Distinction) from B.Sc. in Computer Engineering<br/>
+                    <strong>GPA: 19.7/20.0</strong> — <strong>Ranked 2nd out of 192 students</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">National Physics Olympiad Silver Medalist<span class="text-muted h6"> Young Scholars Club</span></div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">Jun 2019 - Sep 2019 </div>
+                  <div>
+                    In Iran, a competition consisting of three rounds is held annually, in which more than 10,000 participants are tested on their theoretical
+                    and practical knowledge of physics. Following the third and final round, only 40 participants are selected to attend the Physics Olympiad Summer School,
+                    where they have the opportunity to explore the subject in greater depth during the summer. Fortunately, I was selected as one of the 40 participants,
+                    and after several midterm and final exams, I was awarded a silver medal. 
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="300">
+                <div class="timeline-head px-4 pt-3">
+                  <div class="h5">Ranked 32   <span class="text-muted h6"> at the Nationwide University Entrance Exams</span></div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                  <div class="text-muted text-small mb-3">June, 2013 - May, 2015</div>
+                  <div>
+                    Ranked 32nd in the National University Entrance Exam on Mathematics (Konkour) among more than 150,000 students nationwide. (Top 0.02%)
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
+                <div class="timeline-head px-4 pt-3">
+                    <div class="h5">CMMRS 2024 <span class="text-muted h6"><a href="https://cmmrs.mpi-sws.org/" target="_blank">Cornell, Maryland, Max Planck </a></span></div>
+                </div>
+                <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Summer 2024 - Max Planck Institute</div>
+                    <div>
+                      CMMRS 2024 is a Pre-Doctoral School on Computer Science organized by Cornell University, Max Planck Institute for Software Systems, and University of Maryland, College Park. I was among about 80 talented students from all over the world who were selected to participate in this school.
+                    </br><a href="https://drive.google.com/file/d/16ekWHy3Iwi5sma4A84y0fx3NFPo0s_Sz/view?usp=sharing" class="btn btn-secondary mt-2">View Certificate</a>
+                    </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Publications (unboxed, full text; arXiv buttons same style) -->
+        <section id="publications" class="section">
+          <div class="container-inner">
+            <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Publications</h3>
+
+            <!-- STITCH-OPE -->
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/r2.png" alt="STITCH-OPE Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">STITCH-OPE: Trajectory Stitching with Guided Diffusion for Off-Policy Evaluation</h5>
+                <p>
+                  STITCH-OPE is a model-based generative framework that leverages denoising diffusion for long-horizon OPE in
+                  high-dimensional state and action spaces via trajectory stitching and combination of positive and negative guided diffusion.
+                  <i>NeurIPS 2025 <strong>(Spotlight)</strong></i>
+                </p>
+                <a href="https://arxiv.org/abs/2505.20781v1" class="btn btn-secondary">arXiv</a>
+                <a href="https://stitch-ope.github.io/" class="btn btn-secondary">Project Page</a>
+                <a href="https://github.com/STITCH-OPE/stitch-ope" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+
+            <!-- Certified Adversarial Robustness -->
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/r1.png" alt="Certified Adversarial Robustness Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">Soft Super-Pixel Partitioning for Certified Adversarial Robustness</h5>
+                <p>
+                  In collaboration with <a href="https://www.cse.cuhk.edu.hk/~farnia/" target="_blank">Prof. Farzan Farnia</a>, 
+                  We proposed a new method for the Certified Robustness Problem that leverages the spatial correlation of image pixels using SuperPixel Algorithms from Computer Vision literature, such as SLIC SuperPixels.
+                  Our method greatly improves the visibility of the image and reduces the effective noise by a factor proportional to the square-root of the average super pixel size. 
+                  The paper is currently available on arXiv and we plan to complete some of our proofs and submit it soon.
+                </p>
+                <a href="https://arxiv.org/abs/2409.13546" class="btn btn-secondary">arXiv</a> 
+                <a href="https://github.com/hgoli02/SoftSuperpixels" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+
+            <!-- Detecting Viral Social Events -->
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/r3.png" alt="Detecting Viral Social Events Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">Detecting Viral Social Events with Deep Survival Analysis in Complex Networks</h5>
+                <p>
+                  In this Project We Developed a framework for early detection of viral events in a complex network using statistical methods such as
+                  survival analysis. To learn a good survival function we proposed using RNN's on the time series data. We evaluted our work on multiple datasets including Twitter, Weibo and Digg.
+                </p>
+                <a href="https://arxiv.org/abs/2410.01320" class="btn btn-secondary">arXiv</a>
+                <a href="https://github.com/hgoli02/VEDSA" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Coursework Projects (full text) -->
+        <section id="coursework" class="section">
+          <div class="container-inner">
+            <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Coursework Projects</h3>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/c1.png" alt="Computer Vision Course Project Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">Computer Vision Course Project</h5>
+                <p>Developed a graph-based image segmentation algorithm using superpixels to group similar pixels by spatial and color features. 
+                After constructing the graph, Disjoint Set Union (DSU) iteratively merges vertices until final segmentation. 
+                Leveraging SLIC superpixels, a k-means variant, this method enhances robustness without requiring adversarial training. 
+                In the second part of the project, we implemented Tiny-NeRF, a simplified version of the famous NeRF paper.</p>
+                
+                <a href="https://drive.google.com/file/d/1CR9wnSu_XvaSnVe2yInE3fyfTQPRT-1K/view?usp=sharing" class="btn btn-secondary">Project Report</a>
+                <a href="https://github.com/hgoli02/Computer-Vision-Project/tree/master" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/c4.png" alt="Kafka from Scratch Project Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">Advanced Programming Project - YuGiOh Game</h5>
+                <p>
+                  In this project, we designed the famous trading card game, YuGiOh, from scratch, utilizing various design patterns such as Singleton, Factory, Observer, and more. The programming language used was Java. The project was divided into three phases: implementing the core game logic, developing the graphical user interface, and adding network capabilities to allow peer-to-peer gameplay.    </p>
+                <a href="https://www.youtube.com/watch?v=JjeMkfYHdVU" class="btn btn-secondary">Watch Trailer</a>
+                <a href="https://github.com/Advanced-Programming-2021/project-team-01" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-4">
+                <img class="img-fluid" src="images/c3.png" alt="Kafka from Scratch Project Thumbnail" loading="lazy" />
+              </div>
+              <div class="col-md-8">
+                <h5 class="fw-bold">System Analysis Design Project - Kafka from Scratch</h5>
+                <p>
+                  In this project, we designed a fully dockerized, distributed message queue system from scratch, similar to Kafka. 
+                  The project involved building and configuring a fault-tolerant, scalable messaging system using Docker containers, allowing message passing across distributed nodes.
+                </p>
+                <a href="https://github.com/hgoli02/System-Analysis-Design-Project" class="btn btn-secondary btn-github">GitHub</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Teaching & Community (full text) -->
+        <section id="other" class="section">
+          <div class="container-inner">
+            <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Teaching Experience and Community Involvement</h3>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-12">
+                <h5 class="fw-bold">Teaching Assistant at Sharif University of Technology</h5>
+                <p>
+                  <ul>
+                    <li><a href="https://sut-ml.github.io/" target="_blank">Machine Learning (Graduate)</a>, Spring 2024, Prof. Fatemeh SeyedSalehi — Head Teaching Assistant</li>
+                    <li>Machine Learning (Graduate), Fall 2023, Prof. Abolfazl Motahari — Theoretical Head Teaching Assistant</li>
+                    <li>Probability and Statistics, Spring 2023, Prof. Ali Sharifi Zarchi — Head of Midterm Exam</li>
+                    <li>Linear Algebra, Fall 2022, Prof. Hamid R. Rabiee — Recitation Class and Homeworks</li>
+                    <li>Advanced Programming, Spring 2022, Prof. Amin Fazli — Project Design Team</li>
                   </ul>
-                </nav>
+                </p>
               </div>
-              <!-- <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="CV.pdf" data-aos="fade-right" data-aos-delay="700">Download CV</a> -->
+            </div>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="col-md-12">
+                <h5 class="fw-bold">Physics Olympiad Teacher</h5>
+                <p>Prepared students to participate in the Physics Olympiad, teaching multiple subjects such as Multivariate Calculus, Electromagnetics, and Newtonian Mechanics.</p>
+              </div>
+            </div>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="col-md-12">
+                <h5 class="fw-bold">Rasta Summer School - Game Theory Mentor</h5>
+                <p>We organized and led a workshop for high school students, introducing fundamental concepts of game theory in an engaging manner. The workshop was divided into three sections: Market Sharing, Braess’s Paradox, and the Development of Trust. My primary responsibility was the Development of Trust Section.</p>
+              </div>
+            </div>
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="700">
+              <div class="col-md-12">
+                <h5 class="fw-bold">Scientific Staff of Sharif AI-Challenge</h5>
+                <p>As a scientific staff member, I was involved with the design and implementation of the scientific part of the challenge.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-    <div class="about-section">
-      <div class="row">
-        <div >
-          <h2 class="h2 fw-light mb-4">About Me</h2>  
-          <p>Hello! I’m Hossein Goli, a recent Graduate in Computer Engineering at Sharif University of Technology and an Incoming PhD student at the University of Toronto CS department.</p>
-          <p> I generally relish mathematically inspired fields. Because of my roots in Physics, One of the things i most enjoy is to combine beautiful mathematical concepts coming from physics and the perespectives of a physicist into Computer Science. I enjoy both the theoretical and practical side of Computer Science, as the enjoyment of seeing your algorithm work is like no other. </p>
-        </div>
-  </div>
+        </section>
 
-  <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-    <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Education</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">  Sharif University Of Technology, Tehran, Iran   <span class="text-muted h6"></span>          </div>
+        <div class="divider"></div>
+
+        <!-- Hobbies (full text) -->
+        <section id="hobbies" class="section">
+          <div class="container-inner">
+            <h2 class="h2 fw-light mb-4">Hobbies</h2>
+            <p>Outside of academia, I enjoy engaging in activities that help me relax and find inspiration for my work. Here are some of my hobbies:</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-book"></i> History Exploring - I enjoy reading history, especially from the Sengoku era (Japan) and the Three Kingdoms (China). I fantasize about different paths that history could have unfolded and write and draw some paintings from those eras</li>
+              <li><i class="fas fa-seedling"></i> Gardening and Flowering - I used to enjoy gardening and taking care of flowers. I plan to take up this hobby again in the near future.</li>
+              <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-12 text-center">
+                  <img src="images/mexico.png" alt="Mexican Peppers from my Garden" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" />
+                </div>
+                <div class="col-md-12 text-center">
+                  <p>Some of my mexican Peppers</p>
+                </div>
+              </div>
+            </ul>
           </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2020 - 2025</div>
-            <div>
-            B.Sc. in Computer Engineering, Sharif University of Technology — GPA: <strong>19.7/20</strong><br/>
-            <strong>Rank 2/193</strong> , graduated with highest distinction
-          </div>
+        </section>
 
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Diploma of Mathematics and Physics<span class="text-muted h6">         </span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2016 - 2020</div>
-            <div>
-              Allame Helli <a href="https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents">NODET</a> (SAMPAD) High School
-
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="shadow-1-strong bg-white my-5 p-5" id="honors">
-    <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Honors and Awards</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">National Physics Olympiad Silver Medalist<span class="text-muted h6"> Young Scholars Club</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Jun 2019 - Sep 2019 </div>
-            <div>
-              In Iran, a competition consisting of three rounds is held annually, in which more than 10,000 participants are tested on their theoretical
-               and practical knowledge of physics. Following the third and final round, only 40 participants are selected to attend the Physics Olympiad Summer School,
-               where they have the opportunity to explore the subject in greater depth during the summer. Fortunately, I was selected as one of the 40 participants,
-               and after several midterm and final exams, I was awarded a silver medal. 
-            </div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Ranked 32   <span class="text-muted h6"> at the Nationwide University Entrance Exams</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">June, 2013 - May, 2015</div>
-            <div>
-              Ranked 32nd in the National University Entrance Exam on Mathematics (Konkour) among more than 150,000 students nationwide. (Top 0.02%)
-            </div>
-          </div>
-        </div>
-        
-        <!-- CMMRS 2024 -->
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-              <div class="h5">CMMRS 2024 <span class="text-muted h6"><a href="https://cmmrs.mpi-sws.org/" target="_blank">Cornell, Maryland, Max Planck </a></span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-              <div class="text-muted text-small mb-3">Summer 2024 - Max Planck Institute</div>
-              <div>
-                CMMRS 2024 is a Pre-Doctoral School on Computer Science organized by Cornell University, Max Planck Institute for Software Systems, and University of Maryland, College Park. I was among about 80 talented students from all over the world who were selected to participate in this school.
-              </br><a href="https://drive.google.com/file/d/16ekWHy3Iwi5sma4A84y0fx3NFPo0s_Sz/view?usp=sharing" class="btn btn-secondary mt-2">View Certificate</a>
-              </div>  
-          </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  <!-- EXPERIENCE SECTION -->
-<div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-  <!-- Research Experience -->
-  <div class="my-5">
-    <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Publications</h3>
-
-    <!-- Research Project 1 (Moved Up & Updated): STITCH-OPE -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
-      <div class="col-md-4">
-        <img class="img-fluid" src="images/r2.png" alt="STITCH-OPE Thumbnail" loading="lazy" />
-      </div>
-      <div class="col-md-8">
-        <h5 class="fw-bold">STITCH-OPE: Trajectory Stitching with Guided Diffusion for Off-Policy Evaluation</h5>
-        <p>
-          STITCH-OPE is a model-based generative framework that leverages denoising diffusion for long-horizon OPE in
-          high-dimensional state and action spaces via trajectory stitching and combination of positive and negative guided diffusion.
-          <strong>Selected as a Spotlight paper at NeurIPS 2025.</strong>
-        </p>
-        <a href="https://arxiv.org/abs/2505.20781v1" class="btn btn-primary">arXiv</a>
-        <a href="https://stitch-ope.github.io/" class="btn btn-secondary ms-2">Project Page</a>
-        <a href="https://github.com/STITCH-OPE/stitch-ope" class="btn btn-secondary ms-3">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Research Project 2: Certified Adversarial Robustness -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="col-md-4">
-        <img class="img-fluid" src="images/r1.png" alt="Certified Adversarial Robustness Thumbnail" loading="lazy" />
-      </div>
-      <div class="col-md-8">
-        <h5 class="fw-bold">Soft Super-Pixel Partitioning for Certified Adversarial Robustness</h5>
-        <p>
-          In collaboration with <a href="https://www.cse.cuhk.edu.hk/~farnia/" target="_blank">Prof. Farzan Farnia</a>, 
-          We proposed a new method for the Certified Robustness Problem that leverages the spatial correlation of image pixels using SuperPixel Algorithms from Computer Vision literature, such as SLIC SuperPixels.
-          Our method greatly improves the visibility of the image and reduces the effective noise by a factor proportional to the square-root of the average super pixel size. 
-          The paper is currently available on arXiv and we plan to complete some of our proofs and submit it soon.
-        </p>
-        <a href="https://arxiv.org/abs/2409.13546" class="btn btn-primary">arXiv</a> 
-        <a href="https://github.com/hgoli02/SoftSuperpixels" class="btn btn-secondary ms-3">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Research Project 3: Detecting Viral Social Events -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
-      <div class="col-md-4">
-        <img class="img-fluid" src="images/r3.png" alt="Detecting Viral Social Events Thumbnail" loading="lazy" />
-      </div>
-      <div class="col-md-8">
-        <h5 class="fw-bold">Detecting Viral Social Events with Deep Survival Analysis in Complex Networks</h5>
-        <p>
-          In this Project We Developed a framework for early detection of viral events in a complex network using statistical methods such as
-          survival analysis. To learn a good survival function we proposed using RNN's on the time series data. We evaluted our work on multiple datasets including Twitter, Weibo and Digg.
-        </p>
-        <a href="https://arxiv.org/abs/2410.01320" class="btn btn-primary">arXiv</a>
-        <a href="https://github.com/hgoli02/VEDSA" class="btn btn-secondary ms-3">GitHub</a>
-      </div>
-    </div>
-  </div>
-
-    <!-- Add more research projects as needed -->
-  </div>
-
-  <!-- Other Projects -->
-  <div class="my-5">
-    <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Coursework Projects</h3>
-
-  <!-- Coursework Project 1 -->
-  <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
-    <div class="col-md-4">
-      <img class="img-fluid" src="images/c1.png" alt="Computer Vision Course Project Thumbnail" loading="lazy" />
-    </div>
-    <div class="col-md-8">
-      <h5 class="fw-bold">Computer Vision Course Project</h5>
-      <p>Developed a graph-based image segmentation algorithm using superpixels to group similar pixels by spatial and color features. 
-      After constructing the graph, Disjoint Set Union (DSU) iteratively merges vertices until final segmentation. 
-      Leveraging SLIC superpixels, a k-means variant, this method enhances robustness without requiring adversarial training. 
-      In the second part of the project, we implemented Tiny-NeRF, a simplified version of the famous NeRF paper.</p>
-      
-      <a href="https://github.com/hgoli02/Computer-Vision-Project/tree/master" class="btn btn-primary">GitHub Repository</a>
-      <a href="https://drive.google.com/file/d/1CR9wnSu_XvaSnVe2yInE3fyfTQPRT-1K/view?usp=sharing" class="btn btn-secondary">Project Report</a>
-    </div>
-  </div>
-<div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
-  <div class="col-md-4">
-    <img class="img-fluid" src="images/c4.png" alt="Kafka from Scratch Project Thumbnail" loading="lazy" />
-  </div>
-  <div class="col-md-8">
-    <h5 class="fw-bold">Advanced Programming Project - YuGiOh Game</h5>
-    <p>
-      In this project, we designed the famous trading card game, YuGiOh, from scratch, utilizing various design patterns such as Singleton, Factory, Observer, and more. The programming language used was Java. The project was divided into three phases: implementing the core game logic, developing the graphical user interface, and adding network capabilities to allow peer-to-peer gameplay.    </p>
-    <a href="https://github.com/Advanced-Programming-2021/project-team-01" class="btn btn-primary me-2">GitHub Repository</a>
-    <a href="https://www.youtube.com/watch?v=JjeMkfYHdVU" class="btn btn-secondary">Watch Trailer</a>
-  </div>
-</div>
-
-  <!-- <div class="row mb-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="col-md-4">
-      <img class="img-fluid" src="images/c2.png" alt="Image Captioning Using LSTM Thumbnail" loading="lazy" />
-    </div>
-    <div class="col-md-8">
-      <h5 class="fw-bold">Image Captioning Using LSTM</h5>
-      <p>
-        In this mini project, I used an LSTM-based encoder-decoder architecture for image captioning on the Flickr8k dataset. 
-        Keras was used as the main framework for designing the architecture, while PyTorch’s "bert-base-uncased" model was utilized to measure the similarity between true and predicted captions.
-      </p>
-      <a href="https://github.com/hgoli02/Image-Captioning-using-LSTM" class="btn btn-primary">GitHub Repository</a>
-    </div>
-  </div> -->
-  <!-- System Analysis Design Project - Kafka from Scratch -->
-<div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
-  <div class="col-md-4">
-    <img class="img-fluid" src="images/c3.png" alt="Kafka from Scratch Project Thumbnail" loading="lazy" />
-  </div>
-  <div class="col-md-8">
-    <h5 class="fw-bold">System Analysis Design Project - Kafka from Scratch</h5>
-    <p>
-      In this project, we designed a fully dockerized, distributed message queue system from scratch, similar to Kafka. 
-      The project involved building and configuring a fault-tolerant, scalable messaging system using Docker containers, allowing message passing across distributed nodes.
-    </p>
-    <a href="https://github.com/hgoli02/System-Analysis-Design-Project" class="btn btn-primary">GitHub Repository</a>
-  </div>
-</div>
-
-    <!-- Add more coursework projects as needed -->
-  </div>
-
-  <div class="my-5">
-    <h3 class="h3 fw-light mb-4" data-aos="fade-up" data-aos-delay="100">Teaching Experience and Community Involvement</h3>
-
-    <!-- Teaching Assistant at Sharif University of Technology -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
-      <div class="col-md-12">
-        <h5 class="fw-bold">Teaching Assistant at Sharif University of Technology</h5>
-        <p>
-          <ul>
-            <li><a href="https://sut-ml.github.io/" target="_blank">Machine Learning (Graduate)</a>, Spring 2024, Prof. Fatemeh SeyedSalehi — Head Teaching Assistant</li>
-            <li>Machine Learning (Graduate), Fall 2023, Prof. Abolfazl Motahari — Theoretical Head Teaching Assistant</li>
-            <li>Probability and Statistics, Spring 2023, Prof. Ali Sharifi Zarchi — Head of Midterm Exam</li>
-            <li>Linear Algebra, Fall 2022, Prof. Hamid R. Rabiee — Recitation Class and Homeworks</li>
-            <li>Advanced Programming, Spring 2022, Prof. Amin Fazli — Project Design Team</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-
-    <!-- Physics Olympiad Teacher -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="500">
-      <div class="col-md-12">
-        <h5 class="fw-bold">Physics Olympiad Teacher</h5>
-        <p>Prepared students to participate in the Physics Olympiad, teaching multiple subjects such as Multivariate Calculus, Electromagnetics, and Newtonian Mechanics.</p>
-      </div>
-    </div>
-
-    <!-- Rasta Summer School - Game Theory Mentor -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="600">
-      <div class="col-md-12">
-        <h5 class="fw-bold">Rasta Summer School - Game Theory Mentor</h5>
-        <p>We organized and led a workshop for high school students, introducing fundamental concepts of game theory in an engaging manner. The workshop was divided into three sections: Market Sharing, Braess’s Paradox, and the Development of Trust. My primary responsibility was the Development of Trust Section.</p>
-      </div>
-    </div>
-
-    <!-- Scientific Staff of Sharif AI-Challenge -->
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="700">
-      <div class="col-md-12">
-        <h5 class="fw-bold">Scientific Staff of Sharif AI-Challenge</h5>
-        <p>As a scientific staff member, I was involved with the design and implementation of the scientific part of the challenge.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- REMOVED: Entire Skills section (id="skills") -->
-
-<!-- Hobbies Section -->
-<div class="shadow-1-strong bg-white my-5 p-5" id="hobbies">
-  <h2 class="h2 fw-light mb-4">Hobbies</h2>
-  <p>Outside of academia, I enjoy engaging in activities that help me relax and find inspiration for my work. Here are some of my hobbies:</p>
-  <ul class="list-unstyled">
-    <li><i class="fas fa-book"></i> History Exploring - I enjoy reading history, especially from the Sengoku era (Japan) and the Three Kingdoms (China). I fantasize about different paths that history could have unfolded and write and draw some paintings from those eras</li>
-    <li><i class="fas fa-seedling"></i> Gardening and Flowering - I used to enjoy gardening and taking care of flowers. I plan to take up this hobby again in the near future.</li>
-    <div class="row mb-4" data-aos="fade-up" data-aos-delay="400">
-      <div class="col-md-12 text-center">
-        <img src="images/mexico.png" alt="Mexican Peppers from my Garden" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" />
-      </div>
-      <div class="col-md-12 text-center">
-        <p>Some of my mexican Peppers</p>
-      </div>
-    </div>
-  </ul>
-</div>
-
-<!-- <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-  <h2 class="h2 fw-light mb-4">Contact</h2>
-  <div class="contact-info">
-    <ul class="list-unstyled">
-      <li><i class="fas fa-envelope"></i> <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></li>
-      <li><i class="fas fa-university"></i> <a href="mailto:youremail@university.edu">youremail@university.edu</a></li>
-      <li><i class="fab fa-github"></i> <a href="https://github.com/username">GitHub (username)</a></li>
-      <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/username">LinkedIn</a></li>
-      <li><i class="fab fa-telegram"></i> <a href="https://t.me/username">Telegram</a></li>
-    </ul>
-  </div>
-</div> -->
-
-</div>
+    </main>
   
-  
-
-  <script src="scripts/mdb.min.js?ver=1.2.1"></script>
+    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
     <script src="scripts/aos.js?ver=1.2.1"></script>
     <script src="scripts/main.js?ver=1.2.1"></script>
   </body>
