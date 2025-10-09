@@ -502,3 +502,19 @@ a.btn.btn-project:visited{
     transition: none;
   }
 }
+
+.badge-spotlight {
+  font-weight: 700;
+  box-shadow: 0 0 0 0 rgba(255,193,7,.7);
+  animation: pulseBadge 2s ease-out infinite;
+}
+@keyframes pulseBadge {
+  0%   { box-shadow: 0 0 0 0 rgba(255,193,7,.6); }
+  70%  { box-shadow: 0 0 0 10px rgba(255,193,7,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,193,7,0); }
+}
+
+.venue-highlight{
+  position:relative; padding:0 .15em;
+  font-style:italic; font-weight:600;
+}
