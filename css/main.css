@@ -518,3 +518,6 @@ a.btn.btn-project:visited{
   position:relative; padding:0 .15em;
   font-style:italic; font-weight:600;
 }
+
+.authors { color: var(--authors-color, #373c41); font-size: .975rem; margin-bottom: .5rem; }
+.authors .me { font-weight: 700; }
