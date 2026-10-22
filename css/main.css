@@ -25,7 +25,7 @@ img { display:block; max-width:100%; }
 .hero { position:relative; margin-top:27px; padding:38px 25px 32px; border-radius:8px; overflow:hidden; text-align:center; color:#fff; background:#20282b url('../images/header-background.jpg') center / cover no-repeat; }
 .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(110deg,#142129b8,#172026b0); }
 .hero-content { position:relative; }
-.portrait { width:138px; height:138px; object-fit:cover; border:4px solid #fffffff0; border-radius:8px; margin-inline:auto; box-shadow:0 3px 15px #0002; }
+.portrait { width:138px; height:138px; object-fit:cover; border:0; border-radius:50%; margin-inline:auto; box-shadow:0 3px 15px #0002; }
 .hero h1 { font:500 35px/1.3 var(--heading); margin-top:17px; letter-spacing:-.7px; }
 .hero-subtitle { font-size:15px; font-weight:500; margin-top:7px; color:#f4f6f7; letter-spacing:.15px; }
 .hero-subtitle a { color:inherit; }

@@ -38,7 +38,7 @@
 [data-design="compact"] .hero { text-align:left; background:#fff; color:var(--ink); padding:45px 20px 43px 0; margin-top:0; border-radius:0; border-bottom:1px solid var(--line); }
 [data-design="compact"] .hero::before { background:#26333d url('../images/header-background.jpg') center / cover; inset:24px 0 24px auto; width:230px; opacity:.12; border-radius:8px; }
 [data-design="compact"] .hero-content { display:grid; grid-template-columns:minmax(0,1fr) 166px; gap:8px 32px; align-items:center; }
-[data-design="compact"] .portrait { grid-column:2; grid-row:1 / span 5; width:150px; height:150px; border:5px solid #fff; border-radius:8px; }
+[data-design="compact"] .portrait { grid-column:2; grid-row:1 / span 5; width:150px; height:150px; border:0; border-radius:50%; }
 [data-design="compact"] .hero h1 { grid-column:1; grid-row:1; font-size:39px; margin-top:0; letter-spacing:-1px; }
 [data-design="compact"] .hero-subtitle { grid-column:1; grid-row:2; color:var(--accent); font-size:15px; margin-top:0; }
 [data-design="compact"] .hero-study { grid-column:1; grid-row:3; color:var(--muted); margin-top:0; font-size:12px; }
