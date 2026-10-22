@@ -1,0 +1,13 @@
+Affiliation logos (official assets, downloaded 2026-10-22):
+ELLIS Institute Tübingen: https://tuebingen.ellis.eu/assets/logos/ellis-insittute-logo-horizontal_black-1f1c8efb56698deb463f35430512f4dea0010da487b4eb914f9472aa28814ddc.webp
+University of Tübingen: https://uni-tuebingen.de/_assets/7d66ab3e4599366251c5af46f0e770b9/Images/Logo_Universitaet_Tuebingen.svg
+Zuse School ELIZA: https://eliza.school/ (footer SVG; official brand fills embedded for standalone use)
+
+Paper figures:
+Medix: https://arxiv.org/html/2510.06505v2/teaser.png
+Imaginative Generative AI: https://arxiv.org/html/2608.09385v2/Intro_imagination.png
+STITCH-OPE and robustness figures: retained from the existing website.
+University of Toronto: https://www.utoronto.ca/themes/custom/bootstrap_uoft/logo.svg
+CUHK: https://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png?20221027
+UofT signature: original official SVG geometry, rendered in UofT navy (#002A5C) for the white page.
+Sharif University of Technology logo: https://cdn.worldvectorlogo.com/logos/sharif.svg (via Worldvectorlogo)

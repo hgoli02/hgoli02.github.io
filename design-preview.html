@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Hossein Goli — Compare Website Designs</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;height:100%;color:#27353d;background:#f3f5f6;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{height:100vh;height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr)}.review-header{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding:15px 24px;background:#fff;border-bottom:1px solid #dce3e7}.review-intro{flex:1;min-width:180px}.review-title{font-size:14px;font-weight:600;margin:0}.review-subtitle{font-size:11px;color:#6b7882;margin:3px 0 0}.choices{display:flex;flex-shrink:0;gap:5px;flex-wrap:wrap}.choices button{font-family:inherit;font-size:12px;font-weight:500;line-height:1.5;padding:8px 12px;border:1px solid #dce3e7;background:#fff;color:#52636e;border-radius:5px;cursor:pointer;min-height:36px}.choices button[aria-pressed="true"]{color:#fff;background:#176b80;border-color:#176b80}.choices button:hover{border-color:#176b80}.choices button:focus-visible,a:focus-visible{outline:2px solid #176b80;outline-offset:3px}.full-page{font-size:11px;color:#176b80;text-decoration:none;white-space:nowrap}.preview-surface{min-height:0;background:#fff}.preview-frame{width:100%;height:100%;border:0;display:block}@media(max-width:620px){.review-header{padding:12px 15px;gap:10px}.review-intro{flex:1;min-width:0}.choices{order:3;width:100%}.choices button{flex:1;padding:9px 8px;font-size:11px}.full-page{font-size:10px}.review-subtitle{font-size:10px}}
+  </style>
+  <script src="scripts/design-review.js" defer></script>
+</head>
+<body>
+  <header class="review-header">
+    <div class="review-intro"><h1 class="review-title">Compare website designs</h1><p class="review-subtitle" id="design-description" aria-live="polite">Same content · centered mathematical banner</p></div>
+    <nav class="choices" aria-label="Choose a website design">
+      <button type="button" data-design="classic" aria-pressed="true">Classic</button>
+      <button type="button" data-design="sidebar" aria-pressed="false">Sidebar</button>
+      <button type="button" data-design="compact" aria-pressed="false">Compact</button>
+      <button type="button" data-design="cards" aria-pressed="false">Research Cards</button>
+    </nav>
+    <a class="full-page" id="open-design" href="index.html?design=classic" target="_blank" rel="noopener">Open full page ↗</a>
+  </header>
+  <main class="preview-surface"><iframe class="preview-frame" id="design-frame" src="index.html?design=classic" title="Classic website design"></iframe></main>
+</body>
+</html>
