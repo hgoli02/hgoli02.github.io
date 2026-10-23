@@ -49,7 +49,7 @@ img { display:block; max-width:100%; }
 .affiliation-logos > a { display:flex; flex-direction:column; align-items:center; gap:11px; color:var(--muted); font-size:11px; text-align:center; }
 .affiliation-logos img { object-fit:contain; width:150px; max-width:100%; height:48px; }
 .affiliation-logos > a:last-child img { width:95px; }
-.journey-panorama { width:min(100%,640px); margin:28px auto 0; }
+.journey-panorama { width:100%; margin:28px auto 0; }
 .journey-panorama a { display:block; border-radius:8px; cursor:zoom-in; }
 .journey-panorama img { width:100%; height:auto; border-radius:8px; }
 .paper-list { display:grid; gap:29px; }
