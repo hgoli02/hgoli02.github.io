@@ -11,3 +11,6 @@ University of Toronto: https://www.utoronto.ca/themes/custom/bootstrap_uoft/logo
 CUHK: https://www.cuhk.edu.hk/english/images/cuhk_logo_2x.png?20221027
 UofT signature: original official SVG geometry, rendered in UofT navy (#002A5C) for the white page.
 Sharif University of Technology logo: https://cdn.worldvectorlogo.com/logos/sharif.svg (via Worldvectorlogo)
+
+Research journey panorama (2026-10-23): generated with the built-in image generation tool for this website. Conceptual illustration of Tehran / Sharif, Hong Kong, University of Toronto, and Tübingen. Full prompt set: research-journey-prompts.txt. Exported as a JPEG for the website.
+Architectural reference for the Tübingen refinement: https://www.tuebingen-info.de/attraktion/neckarfront-tuebingen-de386ef66f

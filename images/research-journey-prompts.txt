@@ -1,0 +1,31 @@
+Research journey illustration
+Created 2026-10-23 using the built-in image generation tool.
+Final asset: images/research-journey.jpg
+Conceptual architectural illustration; not a photographic record.
+
+INITIAL GENERATION PROMPT
+
+Use case: illustration-story.
+Asset type: a premium panoramic illustration for Hossein Goli's personal academic website, placed between his affiliations and publications.
+
+Create ONE exceptionally beautiful, cohesive, hand-painted architectural panorama of a personal research journey. Very wide landscape canvas, approximately 3:1 aspect ratio (3072 by 1024 composition). It must feel like a bespoke fine-art editorial travel painting, mature, tasteful, luminous and quietly emotional, with finely observed architecture, subtle watercolor/gouache texture and soft atmospheric depth. Not a diagram or a website screenshot.
+
+The landscape transforms smoothly from LEFT to RIGHT through FOUR recognizable places, equally represented:
+1. Tehran, Iran / Sharif University: a leafy modern university campus with pale stone and warm brick academic buildings, the elegant white Azadi Tower visible in the distance, and the pale blue Alborz mountains behind Tehran. Evoke Sharif and Tehran with authentic modern Iranian architectural character.
+2. Hong Kong: lush subtropical hills flowing into Victoria Harbour and its recognizable dense skyline, including the Bank of China Tower and IFC, with a small graceful harbour ferry. Blue-green water and fine hazy city detail.
+3. University of Toronto, Toronto: the historic Romanesque stone University College building with its central square tower and arched entrance, surrounded by mature trees with restrained early autumn color; the CN Tower and a few Toronto skyline buildings rise softly in the distance. Campus is the foreground subject, the CN Tower a secondary identity cue.
+4. Tübingen, Germany: a lovingly detailed view from the Neckarbrücke / Eberhardsbrücke toward the colorful historic Neckarfront, narrow pastel gabled houses, the distinctive round yellow Hölderlinturm, an emerald Neckar river, reflections and a small traditional punt. Make this the gentle final destination.
+
+COMPOSITION: a single continuous imaginative landscape, no panels or seams. The four places blend via hills, treelines, mist and waterways in a physically poetic, seamless transition. Buildings concentrated in the lower two thirds, continuous airy pale sky across the top third. All four locations legible at website banner scale. Avoid cutting off important landmarks at the edges. Restrained lush detail, balanced composition, credible architectural proportions. One consistent soft late-afternoon light, creamy stone, muted jade and teal water, warm terracotta, pale cerulean and delicate amber. Harmonize beautifully with a clean white academic website. Atmospheric edges and a subtle off-white paper finish, no heavy frame.
+
+In the SKY, one tiny luminous warm-gold point has traveled from Iran across Hong Kong and Toronto to Tübingen. Draw its history as ONE very fine elegant gently curving golden light trail across all four places, with three faint tiny afterimage points above the previous places and one slightly brighter live point above Tübingen. Make the trail delicate and integrated into the painting, a quiet personal journey rather than a bold infographic or glowing sci-fi beam. The trail stays in the sky, clear of architecture.
+
+No text, labels, lettering, dates, country flags, university logos, people close-ups, airplanes, map pins, arrows, borders, watermarks or collage cutouts. Richly crafted and visually memorable, professional rather than cartoonish.
+
+TARGETED REFINEMENT PROMPT
+
+Edit the supplied panorama with one targeted architectural correction: make ONLY the RIGHTMOST QUARTER unmistakably Tübingen's real Neckarfront, seen from the Neckarbrücke / Eberhardsbrücke. Preserve the existing Iran, Hong Kong, and Toronto scenes, all other architecture, the overall 3:1 panoramic composition, the continuous blended landscape, finely detailed painterly gouache/watercolor style, beautiful golden afternoon light, palette, and delicate golden journey trail.
+
+In the rightmost quarter, remove the large yellow medieval watchtower on the hill and the invented arched stone bridge. Instead paint the recognizable Tübingen riverfront: a closely packed row of charming four- and five-storey narrow pastel cream, ochre and pale rose houses, steep red-brown tiled gabled roofs, dark green shutters, a few restrained half-timber details, directly lining a stone embankment along the Neckar. The authentic Hölderlinturm is a SHORT, modest, round pale-yellow riverside building, two visible levels, with a SHALLOW dark reddish-brown conical tiled roof and small rectangular windows; it sits right at WATER LEVEL near the houses and tall plane trees, not elevated on a hill, not a fortress and not a tall conical castle turret. Include this recognizable little yellow riverside tower toward the far-right foreground, the old town rising gently behind it, emerald river reflections and one elegant wooden Stocherkahn punt. This should look like the actual iconic Neckarfront postcard viewpoint. A distant modest square church tower may rise behind the gables. No bridge crossing the foreground; we are looking FROM the bridge.
+
+Keep seamless continuity with Toronto at the scene boundary. Extend the last few centimeters of the fine golden sky trail so its single bright endpoint rests above the Tübingen old town. Keep it subtle and beautiful, with three faint points along its previous journey. No text, labels, flags, borders, logos or watermark.
